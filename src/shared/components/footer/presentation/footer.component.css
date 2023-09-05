@@ -1,0 +1,79 @@
+a{
+  text-decoration: none;
+  color: #2B9DFF;
+  font-weight:bold;
+  font-style: italic;
+}
+
+.img-redes{
+  width: 39px;
+  height: 39px;
+  margin-right: 4%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+.content-blue{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    position:absolute;
+    left:0px;  
+    bottom: -460px;
+}
+
+  .textOne{  
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    /* margin-left: 7%; */
+  }
+  .textTwo{   
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    margin-left: 40%;
+  }
+  .textThree{    
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+  }
+
+  h1{  
+    color: white;
+    font-size:25px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .col{
+    display: flex;
+    justify-content: flex-end;
+
+  }
+  
+  @media (max-width: 992px) {
+    
+    .columnaOne, .columnaTwo, .columnaThree {
+      width:100%;
+      float:none;
+    }
+    
+  }
+
+  .copy{
+    /* line-height: 28px;*/
+    text-align: center; 
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    background-color: black;
+    margin-top: 1%;
+    }

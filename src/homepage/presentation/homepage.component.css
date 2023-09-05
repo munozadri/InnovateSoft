@@ -1,0 +1,32 @@
+.container-app{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 5%;   
+    background-color: white; 
+}
+.card{
+    width: 90%;
+}
+.cards{
+    width: 80%;
+    margin: 0px auto; 
+    height: 500px;
+}
+
+.title-one{
+    color: #2B9DFF;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.title-two{
+    width: 70%;
+    color: black; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px; 
+    margin-bottom: 3%;
+    text-align: center;
+}

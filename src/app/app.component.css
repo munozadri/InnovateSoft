@@ -1,0 +1,19 @@
+.scroll{
+    /* height: 100%;
+	width: 100%;
+	border: 1px solid #ddd;
+	background: #f1f1f1; 
+	overflow-y: scroll; */
+    /* display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;  */
+}
+
+.content{
+    width: 100%;
+    min-height: 700px;
+    background-color: aquamarine;
+}
