@@ -12,3 +12,11 @@ h5{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 35px;
 }
+
+@media screen and (max-width: 992px)  {
+    img{      
+        height:350px;   
+       
+    }
+}
+

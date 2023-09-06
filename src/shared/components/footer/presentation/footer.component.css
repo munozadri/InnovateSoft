@@ -12,13 +12,8 @@ a{
   margin-top: 1%;
   margin-bottom: 3%;
 }
-.content-blue{
-    height: 100px;
-    width: 100%;
-    background-color: black;
-    position:absolute;
-    left:0px;  
-    bottom: -460px;
+.content-blue{    
+  background-color: black;  
 }
 
   .textOne{  
@@ -55,18 +50,10 @@ a{
 
   .col{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 
   }
   
-  @media (max-width: 992px) {
-    
-    .columnaOne, .columnaTwo, .columnaThree {
-      width:100%;
-      float:none;
-    }
-    
-  }
 
   .copy{
     /* line-height: 28px;*/
