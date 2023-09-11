@@ -59,7 +59,7 @@
 .background{
     width: 100%;
     background-color: black; 
-    height: 50px;
+    height: 45px;
     position: relative;
     z-index: 1;
 }
@@ -71,5 +71,9 @@
         position: absolute;
         z-index: 2;
     }
+
+   
+    
+    
 }
 

@@ -12,6 +12,15 @@ a{
   margin-top: 1%;
   margin-bottom: 3%;
 }
+
+.img-redes-one{
+  width: 39px;
+  height: 39px;
+  margin-right: 0%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
 .content-blue{    
   background-color: black;  
 }
@@ -51,8 +60,7 @@ a{
   .col{
     display: flex;
     justify-content: center;
-
-  }
+    }
   
 
   .copy{
@@ -63,4 +71,24 @@ a{
     font-size: 15px;
     background-color: black;
     margin-top: 1%;
+  }
+
+    .content-col{
+      display: flex;
+      justify-content:flex-end;
+      background-color: black;
     }
+
+    @media screen and (max-width: 992px)  {
+      .content-col{
+        display: flex;
+        justify-content:center;
+        background-color: black;
+        border-bottom: 1px white;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
+    }
+   

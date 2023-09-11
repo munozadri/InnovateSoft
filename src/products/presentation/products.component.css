@@ -1,0 +1,163 @@
+ 
+  div#imagen {
+    width: 100%;
+    height: 550px;
+    background-size: cover;/*sólo para ejemplo*/
+    background: url("../../assets/img/diseño.jpg") 100% no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 30px auto;
+  }
+  
+  div#imagenTwo {
+    width: 100%;
+    height: 550px;
+    background-size: cover;/*sólo para ejemplo*/
+    background: url("../../assets/img/desa_sof.png") 100% no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 30px auto;
+  }
+
+  div#imagenThree {
+    width: 100%;
+    height: 550px;
+    background-size: cover;/*sólo para ejemplo*/
+    background: url("../../assets/img/prueba.jpg") 100% no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 30px auto;
+  }
+
+  div#imagenFour {
+    width: 100%;
+    height: 550px;
+    background-size: cover;/*sólo para ejemplo*/
+    background: url("../../assets/img/mantenimiento.jpg") 100% no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 30px auto;
+  }
+  
+  div#info {
+    position:absolute;
+    overflow:hidden;
+    width: 100%;
+    height: 550px;
+    background-color: rgba(31, 31, 31, 0.9);
+    opacity:0;
+    transition: opacity 0.3s;
+    padding: 3%;
+  }
+  
+  div#imagen:hover div#info {
+    opacity:1;
+  }
+
+  div#imagenTwo:hover div#info {
+    opacity:1;
+  }
+
+  div#imagenThree:hover div#info {
+    opacity:1;
+  }
+
+  div#imagenFour:hover div#info {
+    opacity:1;
+  }
+  
+  p#headline {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: -50%;
+    margin-top: 15px;
+    transition: margin-left 0.3s;
+  }
+  
+  div#imagen:hover p#headline {
+    margin-left: 3px;
+  }
+
+  div#imagenTwo:hover p#headline {
+    margin-left: 3px;
+  }
+
+  div#imagenThree:hover p#headline {
+    margin-left: 3px;
+  }
+
+  div#imagenFour:hover p#headline {
+    margin-left: 3px;
+  }
+  
+  p#descripcion {
+    font-size: 17px;
+    text-align: justify;
+    margin-top: 10px;
+    transition: margin-top 0.4s;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  div#imagen:hover p#descripcion {
+    margin-top: 75px;
+  }
+
+  div#imagenTwo:hover p#descripcion {
+    margin-top: 75px;
+  }
+
+  div#imagenThree:hover p#descripcion {
+    margin-top: 75px;
+  }
+
+  div#imagenFour:hover p#descripcion {
+    margin-top: 75px;
+  }
+
+  .content-products{
+    width: 70%;
+    margin: 0px auto;
+  }
+
+  .title-products{    
+    color: black; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px; 
+    margin-bottom: 3%;
+    margin-top: 2%;
+    text-align: center;
+  }
+
+  .changecolor{
+    text-decoration: none;
+    color: #5C296C;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-background{
+    background-color: #08112E;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.text-white{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;  
+    line-height: 43px;
+}
+
+
+@media screen and (max-width: 992px)  {
+    .content-products{
+        width: 95%;     
+    }    
+}

@@ -1,17 +1,11 @@
-<div class="header" *ngIf="isDesktop">
-    <!-- <ion-row>
-        <ion-col style="display: flex;justify-content: center;" size-xs="12" size-md="12" size-lg="12" size-xl="12">
-            <h1 class="title-header">Teléfono: +54 11 39573548 / Email: ejemplo@gmail.com</h1>
-        </ion-col>
-     
-    </ion-row> -->
+<div class="header" *ngIf="isDesktop">   
     <ion-row>
         <ion-col size-xs="12" size-md="12" size-lg="2" size-xl="2">
             <h2 class="nav-company">InnovateSoft</h2>
         </ion-col>
         <ion-col class="nav" size-xs="12" size-md="12" size-lg="10" size-xl="10">
             <ng-container *ngFor="let item of itemNav">                                
-                <h2 class="nav-title">{{item.title}}</h2>
+                <h2 (click)="goTo(item)" class="nav-title">{{item.title}}</h2>
             </ng-container>            
         </ion-col>
     </ion-row>   

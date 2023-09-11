@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 
 
 @Component({
@@ -8,12 +8,26 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class SliderComponent implements OnInit {
  public slideOpts: any
+ public isDesktop: boolean = false;
+ public isMobile: boolean = false;
   
   
 
   ngOnInit(): void {
-   
+    this.checkScreenWidth();  
   }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkScreenWidth();
+  }
+
+  checkScreenWidth() {
+    const screenWidth = window.innerWidth;
+    this.isDesktop = screenWidth >= 992;
+    this.isMobile = screenWidth < 991;
+  }
+
 
 
   
