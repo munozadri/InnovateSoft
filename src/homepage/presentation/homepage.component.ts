@@ -41,19 +41,20 @@ export class HomepageComponent implements OnInit {
     this.isMobile = screenWidth < 991;
   }
 
-  sendData(){    
-    let name = this.formGroup.controls['name'].value;
-    let surname = this.formGroup.controls['surname'].value;
-    let phone = this.formGroup.controls['phone'].value;
-    let email = this.formGroup.controls['email'].value;
-    let mensaje = this.formGroup.controls['mensaje'].value
-    var message = 'Hola, mi nombre es';
-    message += ` ${name + ' ' + surname}, y quiero realizar una consulta y/o cotización relacionada con ${mensaje}.
-                      Gracias por su tiempo, anexo mi número de teléfono ${phone} y correo electrónico ${email}. Aguardo su respuesta.`;                 
-    const whatsappUrl = `https://wa.me/send?phone=${this.whatsappNumber}&text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+  sendData(){   
+    if(this.formGroup.valid){
+      let name = this.formGroup.controls['name'].value;
+      let surname = this.formGroup.controls['surname'].value;
+      let phone = this.formGroup.controls['phone'].value;
+      let email = this.formGroup.controls['email'].value;
+      let mensaje = this.formGroup.controls['mensaje'].value
+      var message = 'Hola, mi nombre es';
+      message += ` ${name + ' ' + surname}, y quiero realizar una consulta y/o cotización relacionada con ${mensaje}.
+                        Gracias por su tiempo, anexo mi número de teléfono ${phone} y correo electrónico ${email}. Aguardo su respuesta.`;                 
+      const whatsappUrl = `https://wa.me/send?phone=${this.whatsappNumber}&text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    }     
   }
-
 }
  
 

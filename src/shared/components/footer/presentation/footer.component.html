@@ -2,14 +2,16 @@
         <ion-row style="background-color: black;">
             <ion-col  class="no-padding" size-xs="12" size-md="12" size-lg="6" size-xl="6">
                 <h1>Visitanos</h1>
-                <h2 class="textThree">
-                   <img class="img-redes-one" src="../../../../assets/img/localizacion.png" alt=""> Cuidad Autonoma de Buenos Aires, Argentina                    
+                <h2 class="textThree">                   
+                   <div class="img-redes-one"></div>  
+                   Cuidad Autonoma de Buenos Aires, Argentina                
                 </h2>
             </ion-col> 
             <ion-col class="content-col" size-xs="12" size-md="12" size-lg="6" size-xl="6">
-                <img class="img-redes" src="../../../../assets/img/instagram.png" alt="icon-insta">
-                <img class="img-redes" src="../../../../assets/img/facebook.png" alt="icon-face">
-                <img (click)="openWA()" class="img-redes" src="../../../../assets/img/whatsapp.png" alt="iconWa">
+                <div class="img-redes-ins" (click)="openInsta()" ></div>
+                <!-- <div class="img-redes-face"  ></div> -->
+               <a class="img-redes-gmail" href="mailto:innovatesofttecno@gmail.com?"></a>
+                <div (click)="openWA()" class="img-redes-wa"></div>
             </ion-col>
         </ion-row>
         <ion-row>

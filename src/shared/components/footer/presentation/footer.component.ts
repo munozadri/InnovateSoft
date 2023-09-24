@@ -32,5 +32,10 @@ export class FooterComponent implements OnInit {
     window.open(whatsappUrl, '_blank');
   }
 
+  openInsta(){
+   
+    window.open('https://www.instagram.com/innovatesofttecno/?hl=es', '_blank');
+  }
+
 
 }

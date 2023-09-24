@@ -5,22 +5,66 @@ a{
   font-style: italic;
 }
 
-.img-redes{
+.img-redes-ins{
   width: 39px;
   height: 39px;
   margin-right: 4%;
   margin-top: 1%;
   margin-bottom: 3%;
   cursor: pointer;
+  background: url('../../../../assets/img/instagram.png') 100% no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
+.img-redes-face{
+  width: 39px;
+  height: 39px;
+  margin-right: 4%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  cursor: pointer;
+  background: url('../../../../assets/img/facebook.png') 100% no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.img-redes-wa{
+  width: 39px;
+  height: 39px;
+  margin-right: 4%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  cursor: pointer;
+  background: url('../../../../assets/img/whatsapp.png') 100% no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.img-redes-gmail{
+  width: 39px;
+  height: 39px;
+  margin-right: 4%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  cursor: pointer;
+  background: url('../../../../assets/img/correo-electronico.png') 100% no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 
 .img-redes-one{
   width: 39px;
   height: 39px;
-  margin-right: 0%;
-  margin-top: 1%;
+  margin-left: 33%;
+  margin-top: -2%;
   margin-bottom: 3%;
   cursor: pointer;
+  background: url('../../../../assets/img/localizacion.png') 100% no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
 }
 .content-blue{    
   background-color: black;  
@@ -80,6 +124,24 @@ a{
       background-color: black;
     }
 
+    @media screen and (max-width: 1874px)  {
+      .img-redes-one{
+        margin-left: 27%;
+      }
+    }
+
+    @media screen and (max-width: 1550px)  {
+      .img-redes-one{
+        margin-left: 21%;
+      }
+    }
+
+    @media screen and (max-width: 1210px)  {
+      .img-redes-one{
+        margin-left: 16%;
+      }
+    }
+
     @media screen and (max-width: 992px)  {
       .content-col{
         display: flex;
@@ -91,5 +153,35 @@ a{
         margin-top: 2%;
         margin-bottom: 2%;
       }
+            
+      .img-redes-one{
+        width: 39px;
+        height: 39px;
+        margin-left: 26%;
+        margin-top: -2%;
+        position: absolute;
+      }
     }
+
+    @media screen and (max-width: 750px)  {
+      .img-redes-one{
+        width: 39px;
+        height: 39px;
+        margin-left: 20%;
+        margin-top: -2%;
+        position: absolute;       
+      }
+    }
+
+    @media screen and (max-width: 550px)  {
+      .img-redes-one{
+        width: 39px;
+        height: 39px;
+        margin-left: -1%;
+        margin-top: -5%;
+        position: absolute;      
+      }
+    }
+
+    
    

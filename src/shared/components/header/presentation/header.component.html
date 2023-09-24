@@ -6,8 +6,13 @@
         <ion-col class="nav" size-xs="12" size-md="12" size-lg="10" size-xl="10">
             <ng-container *ngFor="let item of itemNav">                                
                 <h2 (click)="goTo(item)" class="nav-title">{{item.title}}</h2>
-            </ng-container>            
+            </ng-container> 
+            <h2 class="nav-title" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Cotizar
+            </h2>           
         </ion-col>
+        
+     
     </ion-row>   
 </div>
 
@@ -49,3 +54,94 @@
         </ion-content>
       </div>
 </div>
+
+    <!-- Modal -->
+    <div style="margin-top: 10%;" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">InnovateSoft - Cotización</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form [formGroup]="formGroup">
+              <div class="img-wa"> </div>
+              <div class="data">
+                <h3 class="important">Realizá tu cotización por WhatsApp</h3>               
+              </div>
+              <div>
+               <ion-row style="margin-top: 2%;">
+                <label for="name">Nombre:</label>
+               </ion-row>
+               <ion-row>
+                <input placeholder="Ingresá tu nombre" type="text" formControlName="name"  />                
+               </ion-row>
+               <ion-row>
+                <div class="errorLabel" *ngIf="formGroup && formGroup.get('name') && formGroup.get('name')?.invalid && formGroup.get('name')?.touched">
+                  El campo no puede estar vacío.
+                </div>
+               </ion-row>
+              </div>
+              <div>
+               <ion-row style="margin-top: 2%;">
+                <label for="surname">Apellido:</label>
+               </ion-row>
+                <ion-row>
+                  <input placeholder="Ingresá tu apellido" type="text" formControlName="surname" />
+                </ion-row>
+                <ion-row>
+                  <div class="errorLabel" *ngIf="formGroup && formGroup.get('surname') && formGroup.get('surname')?.invalid && formGroup.get('surname')?.touched">
+                    El campo no puede estar vacío.
+                  </div>
+                </ion-row>
+              </div>
+              <div>
+               <ion-row style="margin-top: 2%;">
+                <label for="phone">Teléfono:</label>
+               </ion-row>
+                <ion-row>
+                  <input placeholder="Ingresá tu número de teléfono" type="number" formControlName="phone" />
+                </ion-row>
+                <ion-row>
+                  <div class="errorLabel" *ngIf="formGroup && formGroup.get('phone') && formGroup.get('phone')?.invalid && formGroup.get('phone')?.touched">
+                    El campo no puede estar vacío.
+                  </div>
+                </ion-row>
+              </div>
+              <div>
+                <ion-row style="margin-top: 2%;">
+                 <label for="email">Email:</label>
+                </ion-row>
+                 <ion-row>
+                   <input placeholder="Ingresá tu email" type="email" formControlName="email" />
+                 </ion-row>
+                 <ion-row>
+                   <div class="errorLabel" *ngIf="formGroup && formGroup.get('email') && formGroup.get('email')?.invalid && formGroup.get('email')?.touched">
+                     El campo no puede estar vacío.
+                   </div>
+                 </ion-row>
+               </div>
+               <div>
+                <ion-row style="margin-top: 2%;">
+                 <label for="mensaje">Solicitud:</label>
+                </ion-row>
+                 <ion-row>
+                  <textarea formControlName="mensaje"></textarea>
+                 </ion-row>
+                 <ion-row>
+                   <div class="errorLabel" *ngIf="formGroup && formGroup.get('mensaje') && formGroup.get('mensaje')?.invalid && formGroup.get('mensaje')?.touched">
+                     El campo no puede estar vacío.
+                   </div>
+                 </ion-row>
+               </div>
+             
+            </form>
+          </div>         
+
+          <div style="margin-top: 13%;" class="modal-footer">
+            <button type="button" class="cancel" data-bs-dismiss="modal">Cerrar</button>
+            <button (click)="sendData()" type="button" [ngClass]="formGroup.invalid ? 'noDetail' : 'detail'">Cotizar</button>
+          </div>
+        </div>
+      </div>
+    </div>

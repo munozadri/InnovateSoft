@@ -18,10 +18,23 @@
     margin-bottom: 3%;
 }
 
-.img_inno{
+.img_inno-mision{
     width: 100%;
     height: 450px;
+    background: url('../../assets/img/vision.jpg') 100% no-repeat;
+    background-position: center;
+    background-size: cover;  
 }
+
+.img_inno-vision{
+    width: 100%;
+    height: 450px;
+    background: url('../../assets/img/innovation.jpg') 100% no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+
+
 
 .title-one{
     width: 60%;
