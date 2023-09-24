@@ -1,4 +1,10 @@
 
+.img-menu{
+   
+    background: url(' ../../../../assets/img/barra-de-menu.png') 100% no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
 .header{
     background-color:#000000;
     height: 50px;
